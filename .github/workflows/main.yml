@@ -31,11 +31,11 @@ jobs:
       
       - uses: actions/cache@v2.1.2
         with:
-          path: ${{ matrix.projectPath }}/Library
-          key: Library-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}
+          path: ${{ matrix.projectPath }}/Cache
+          key: Cache-${{ matrix.projectPath }}-${{ matrix.targetPlatform }}
           restore-keys: |
-            Library-${{ matrix.projectPath }}-
-            Library-
+            Cache-${{ matrix.projectPath }}-
+            Cache-
       
 #       - uses: webbertakken/unity-test-runner@v1.7
 #         id: testRunner
